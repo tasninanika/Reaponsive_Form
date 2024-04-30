@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important Information Form</title>
+    <style>
+        .form{
+            background-color: rgba(68, 0, 255, 0.775);
+            color: white;
+            padding-left: 25px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            border-radius: 5px;
+            box-shadow: inset 10px 10px 10px 10px rgba(136, 0, 255, 0.693);
+        }
+        .name{
+            display: block;
+        }
+        .nameField{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .email input{
+            width: 90%;
+        }
+        .email{
+            padding-top: 32px;
+        }
+        .contact input{
+            width: 90%;
+        }
+        .contact{
+            padding-top: 32px;
+        }
+        .address{
+            padding-top: 32px;
+        }
+        .zip{
+            padding-top: 32px;
+        }
+        .pass{
+            padding-top: 32px;
+        }
+        .save{
+            margin-top: 65px;
+            margin-left: 20px;
+            background-color: rgba(68, 0, 255, 0.775);
+            border: none;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            color: white;
+            border-radius: 5px;
+            height: 50px;
+            width: 120px;
+            font-size: 17px;
+            box-shadow: inset 10px 10px 10px 10px rgba(136, 0, 255, 0.693);
+        }
+        .cancel{
+            margin-top: 65px;
+            background-color: white;
+            border-color: rgba(68, 0, 255, 0.775);
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            color: white;
+            border-radius: 5px;
+            height: 50px;
+            width: 120px;
+            font-size: 17px;
+            color: rgba(68, 0, 255, 0.775);
+        }
+
+        form{
+            width: 90%;
+            padding: 10px;
+            margin: auto;
+            
+        }
+        .container{
+            width:90%;
+            margin: auto;
+            padding-top: 20px;
+        }
+        input{
+            width: 80%;
+            padding: 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgba(128, 128, 128, 0.192);
+        }
+        label{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        @media screen and (max-width:576px) {
+            .nameField{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                
+            }
+            .last{
+                padding-top: 32px;
+            }
+            
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="form">
+    <h2>FORM</h2>
+    </div>
+    
+    <form action="">
+        <div class="container">
+            <div class="nameField">
+                <div>
+                   <label for="fname">First Name*</label>
+                   <input type="text" id="fname" class="name" required>
+                </div>
+                <div class="last">
+                    <label for="lname">Last Name*</label>
+                    <input type="text" id="lname" class="name" required>
+                </div>
+
+            </div>
+            <div class="email">
+                <label for="email">Email*</label>
+                <input type="email" id="email" required >
+            </div>
+            <div class="contact">
+                <label for="contact">Contact Number*</label>
+                <input type="number" id="contact" required>
+            </div>
+            <div class="nameField">
+                <div class="address">
+                <label for="fname">Address*</label>
+                <input type="address"  id="fname" required>
+                </div>
+                <div class="zip">
+                    <label for="lname">Zip Code*</label>
+                    <input type="number" id="lname" required>
+                </div>
+            </div>
+            <div class="nameField">
+                <div class="pass">
+                    <label for="fname">Password*</label>
+                    <input type="password" id="fname" required>
+                </div>
+                <div>
+                   <button class="save">Save</button>
+                
+                    <button class="cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </form>
+   
+    
+           
+</body>
+</html>
